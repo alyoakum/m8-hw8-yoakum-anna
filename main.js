@@ -3,9 +3,13 @@
 var productsTab = document.getElementById('products');
 var productsOptions = document.querySelector('products-list');
 
-function toggleMenu() {
-  console.log(this);
-  productsOptions.classList.add('show-menu')
-}
+//dropdown
+function dropdown() {
+  productsOptions.classList.add('show-menu');
 
-productsTab.addEventListener('mouseover', toggleMenu);
+productsTab.addEventListener('mouseover', dropdown);
+
+function disappear() {
+  productsOptions.classList.remove('show-menu');
+}
+productsTab.addEventListener('mouseleave', disappear);
