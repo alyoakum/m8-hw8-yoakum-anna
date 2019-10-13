@@ -28,3 +28,11 @@
   border: 2px solid #fff;
   box-sizing: border-box;
 }
+ /* Menu Display */
+
+.products {
+  display: none;
+}
+.show {
+  display: block;
+}
